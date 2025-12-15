@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licenciatarios | Independiente Santa Fe</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #f44336;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    
+    main {
+      max-width: 700px;
+      margin: 3rem auto;
+      background: #fff;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    main h1 {
+      text-align: center;
+      color: #f44336;
+      margin-bottom: 1rem;
+    }
+
+    main p {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      background-color: #f44336;
+      color: white;
+      padding: 0.9rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d32f2f;
+    }
+
+
+    footer {
+      margin-top: 3rem;
+      background-color: #f44336;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/logoprim.png" alt="Logo Santa Fe">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Licenciatarios Oficiales</h1>
+    <p>Si deseas convertirte en un licenciatario oficial del Club Independiente Santa Fe, completa el siguiente formulario y nuestro equipo se pondrá en contacto contigo.</p>
+    
+    <form>
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" required>
+
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" placeholder="@gmail.com" required>
+
+      <label for="empresa">Empresa</label>
+      <input type="text" id="empresa" placeholder="Nombre de tu empresa" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" placeholder="Describe brevemente tu propuesta o consulta..."></textarea>
+
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Independiente Santa Fe. Todos los derechos reservados.
+  </footer>
+</body>
+</html>

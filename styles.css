@@ -1,0 +1,235 @@
+ *, *::before, *::after {
+    box-sizing: inherit;
+}
+header{
+    box-sizing: border-box;
+}
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .container-fluid {
+  box-sizing: inherit;
+   --gap: 0px 0px;
+    --row-gap: 0px;
+    --column-gap: 0px;
+    --padding-top: 0px;
+    --padding-bottom: 0px;
+    --padding-left: 0px;
+    --padding-right: 0px;
+ }
+ .navbar-custom {
+            background-color: #fa4848;
+        }
+        .nav-link {
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .nav img {
+            width: 5%;
+            height: 5%;
+            margin-left: 1.3rem;
+        }  
+        .logo1{
+            width: 8rem;
+            height: 8rem;
+        }
+
+    .nav-link2, .navbar-text {
+      color: rgb(255, 0, 0) !important;
+      font-weight: 500;
+    }
+    .social-icons a {
+      color: rgb(255, 0, 0);
+      margin-left: 10px;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    .social-icons a:hover {
+      color: #b70000;
+    }
+    .video-cage{
+    --display: flex;
+    --flex-direction: column;
+    --container-widget-width: 100%;
+    --container-widget-height: initial;
+    --container-widget-flex-grow: 0;
+    --container-widget-align-self: initial;
+    --flex-wrap-mobile: wrap;
+    --gap: 0px 0px;
+    --row-gap: 0px;
+    --column-gap: 0px;
+    --padding-top: 0px;
+    --padding-bottom: 0px;
+    --padding-left: 0px;
+    --padding-right: 0px;
+}
+.match-card {
+      background-color: #1a1818;
+      color: white;
+      border-radius: 8px;
+      padding: 40px;
+      text-align: center;
+      position: relative;
+    }
+    .team-logo {
+      width: 80px;
+      height: auto;
+    }
+    .match-info {
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+    .liga-logo {
+      width: 160px;
+      margin-top: 25px;
+    }
+    .store-title {
+      font-weight: 800;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .product-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+      text-align: center;
+      background-color: #fafafa;
+    }
+    .access-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    
+    }
+    .access-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+       
+    }
+    .access-card:hover img {
+      transform: scale(1.1);
+      filter: brightness(50%);
+    }
+    .access-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: rgba(255, 0, 0, 0.35);  
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      padding-bottom: 15px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+      .video-container iframe {
+      width: 100%;
+      height: 315px;
+      border-radius: 10px;
+    }
+
+     .footer-santafe {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  
+}
+
+.footer-logo img {
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+.footer-menu {
+  margin-bottom: 25px;
+}
+
+.footer-menu a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+ 
+}
+
+ 
+
+.footer-contacto p {
+  margin: 3px 0;
+  font-size: 14px;
+   
+}
+
+.footer-politicas {
+  margin: 25px 0;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.footer-politicas a {
+  color: #d50000;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #999;
+  margin-top: 15px;
+}
+
+
+  @media (prefers-reduced-motion: reduce) {
+    html * {
+        transition-delay: 0s !important;
+        transition-duration: 0s !important;
+    }
+}
+    
+    
+        /*
+        .navbar-custom .nav-link {
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .divider {
+            color: white;
+            margin: 0 10px;
+        }
+        .logos img {
+            height: 35px;
+            margin-left: 20px;
+        }
+    */
+    @media screen and (max-width: 768px) {
+        .nav-link {
+            font-size: 0.6rem;
+        }
+        .nav img {
+            width: 1rem;
+            height: 1rem;
+            margin-left: 0.5rem;
+        }
+    }

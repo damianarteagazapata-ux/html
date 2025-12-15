@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Html_css"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Taller Bootstrap_2"
+	}
+}

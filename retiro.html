@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retiro | Independiente Santa Fe</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+    .navbar {
+      background-color: #f44336;
+    }
+    .navbar-brand img {
+      height: 45px;
+    }
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: 600;
+    }
+    .navbar-nav .nav-link:hover {
+      text-decoration: underline;
+    }
+    .card-title {
+      color: #f44336;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #f44336;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!--navbar-regr-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logoprim.png" alt="Santa Fe Logo">
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="container my-5">
+    <div class="text-center mb-4">
+      <h1 class="fw-bold text-danger">Solicitud de Retiro</h1>
+      <p class="text-muted">En esta sección puedes presentar tu solicitud formal de retiro o baja administrativa del Club Independiente Santa Fe. Completa el siguiente formulario para que nuestro equipo procese tu solicitud con la mayor prontitud posible.</p>
+    </div>
+
+    <form class="shadow-sm p-4 bg-white rounded">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="documento" class="form-label">Número de documento</label>
+        <input type="text" class="form-control" id="documento" placeholder="Ejemplo: 123456789" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="motivo" class="form-label">Motivo del retiro</label>
+        <select class="form-select" id="motivo" required>
+          <option value="">Selecciona una opción</option>
+          <option value="fin-contrato">Fin de contrato</option>
+          <option value="motivos-personales">Motivos personales</option>
+          <option value="salud">Salud</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="observaciones" class="form-label">Observaciones adicionales</label>
+        <textarea class="form-control" id="observaciones" rows="4" placeholder="Describe brevemente los motivos o circunstancias del retiro..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-danger w-100">Enviar solicitud</button>
+    </form>
+    </section>
+
+  <!--footer-->
+  <footer>
+    &copy; 2025 Independiente Santa Fe. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
